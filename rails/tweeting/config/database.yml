@@ -1,0 +1,12 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 22
+  host: localhost
+  username: postgres
+  password: tardigrade
+
+development:
+  <<: *default
+  database: 'tweeting-develop'
+
